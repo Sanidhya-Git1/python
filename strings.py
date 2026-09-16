@@ -9,15 +9,15 @@ You can use triple quotes to create it.
 """
 
 
-str = " hello "
-print(str) # Output:  hello
-print(str.strip()) # Output: hello
-print(str.lstrip()) # Output: hello
-print(str.rstrip()) # Output: hello
-print(str.upper()) # Output:  HELLO
-print(str.lower()) # Output:  hello
-print(str.capitalize()) # Output:  Hello
-print(str.title()) # Output:  Hello
+str = " hello sanidhya "
+print(str) # Output:  hello sanidhya
+print(str.strip()) # Output: hello sanidhya
+print(str.lstrip()) # Output: hello sanidhya
+print(str.rstrip()) # Output: hello sanidhya
+print(str.upper()) # Output:  HELLO SANIDHYA
+print(str.lower()) # Output:  hello sanidhya
+print(str.capitalize()) # Output:  Hello sanidhya
+print(str.title()) # Output:  Hello Sanidhya
 
 #string formating
 name = "Alice"
@@ -29,3 +29,17 @@ print(formatted_string)  # Output: My name is Alice and I am 30 years old.
 #using str.format() method
 formatted_string_2 = "My name is {} and I am {} years old.".format(name, age)
 print(formatted_string_2)  # Output: My name is Alice and I am 30 years old.
+
+#practice
+attendee = "John"
+event = "python workshop"
+
+# formating using f-string
+new_formatted_strng = f"Attendee name is '{attendee}' for the event '{event}'"  
+print  (new_formatted_strng)  # Output: Attendee name is 'John' for the event 'python workshop'
+
+new_string = "Attendee name is '{}' for the event '{}'".format(attendee, event)
+print(new_string)  # Output: Attendee name is 'John' for the event '
+
+words = new_string.split();
+print(words)  # Output: ["Attendee", "name", "is", "'John'", "for", "the", "event", "'python", "workshop'"]
