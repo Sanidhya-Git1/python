@@ -5,7 +5,7 @@
 x = 10
 if x > 5:
     print("x is greater than 5")
-    print("adding another line to see if it prints or not")
+    print("adding another line to see if it prints or not")  # it prints because it is indented
 
 x = 20
 if(x > 25): # () is optional
@@ -32,3 +32,13 @@ if number>=10 and number <=25:
     print("Condition is true")
 else :
     print("Condition is false")
+
+
+a = 10
+b = 7
+if a > 5:
+    print("a is greater than 5")
+    b = 12
+    print(b)
+else:
+    print("a is less than or equal to 5")
