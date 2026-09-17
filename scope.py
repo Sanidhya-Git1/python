@@ -28,6 +28,25 @@ print(s)
 f()
 print(s)
 
-nums = []
-nums.rev
+
+# local variable
+def func1():
+    local_var = 5
+    print(local_var)
+
+func1()
+#print(local_var) #NameError: name 'local_var' is not defined
+
+# non local variable
+def outerFunction():
+    nonlocal_var = 10
+    def innerFunction():
+        nonlocal nonlocal_var
+        nonlocal_var +=5
+    innerFunction()
+    print(nonlocal_var)
+
+
+outerFunction()
+
 
