@@ -16,3 +16,9 @@ print("Mixed Set:", mixed_set); # Mixed Set: {42, 3.14, (1, 2, 3), 'apple'} - Se
 
 #mixed_set = {"apple", 42, 3.14, (1, 2, 3), [1,2,3]} #TypeError: unhashable type: 'list' - Sets cannot contain mutable elements like lists or dictionaries 
 #mixed_set = {"apple", 42, 3.14, (1, 2, 3), [1,2,3], {"name": "sanidhya"}} #TypeError: unhashable type: 'dict' - Sets cannot contain mutable elements like lists or dictionaries 
+
+# define an empty set
+empty_set = set() # {} creates an empty dictionary, not a set
+print("Empty Set:", empty_set); # Empty Set: set() - An empty set is created using the set() constructor    
+print("Type of empty_set:", type(empty_set)); # Type of empty_set: <class 'set'> - The type of empty_set is <class 'set'>
+
